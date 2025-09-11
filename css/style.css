@@ -1,0 +1,211 @@
+	/* объекты html5 */
+	article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+	audio, canvas, video {display: inline-block; *display: inline; *zoom: 1;}
+	audio:not([controls]) {display: none;}
+
+	/* сброс стилей от Эрика Майера */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;} article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;} body {line-height: 1;} ol, ul {list-style: none;} blockquote, q {quotes: none;} blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;} table {border-collapse: collapse;	border-spacing: 0;}
+	strong {font-family: 'medium', sans-serif;}
+	::-webkit-scrollbar {width: 0px; background: transparent;}
+	html {-ms-overflow-style: none; scrollbar-width: none; scroll-behavior: smooth;}
+	:focus {outline: none !important;}
+	::-moz-focus-inner {border: 0px !important;}
+
+
+@media (min-width: 101px) and (max-width: 800px) {
+    
+	
+	html, body {padding: 0; margin: 0; height: 100%; width: 100%; color: #505050; font-family: inter, sans-serif; font-size: 3vw; font-style: normal; font-weight: 400; line-height: 150%; background: #fff;}
+	a {color: #000; text-decoration: underline;}
+	a:hover {color: #ac1b42;}
+	
+	
+	header {position: absolute; z-index: 10; width: 80vw; height: 22vw; top: 0; left: 10vw; margin: 0; padding: 0; background: transparent; border-bottom: 0.25vw solid #ac1b42;}
+	header .header_logo {position: relative; float: left; width: 34.5vw; margin: 11.5vw 0 0 0; padding: 0; line-height: 0;}
+	header img {width: 100%;}
+	header .header_nav {display: none; position: relative; float: left; margin: 5.2vw 0 0 24vw; padding; 0;}
+	header .header_nav .header_nav-item {position: relative; float: left; margin: 0 3.25vw 0 0;}
+	header .header_nav .header_nav-item a {color: #505050; text-decoration: none;}
+	header .header_nav .header_nav-item a:hover {color: #ac1b42;}
+	header .header_lang {display: none; position: relative; float: right; margin: 5.2vw 0 0 0; padding; 0;}
+	header .header_lang [class^='header_lang-'] {position: relative; width: 1.4vw; float: left; margin: 0 1vw 0 0; line-height: 0;}
+	header .header_lang [class^='header_lang-']:last-child {margin: 0;}
+	header .header_lang [class^='header_lang-'] img {width: 100%;}
+	header .header_online {position: relative; float: right; width: 8vw; margin: 9.5vw 0 0 0; line-height: 0;}
+	header .header_online img {width: 100%;} 
+	
+	
+	#intro {position: relative; margin: 0; padding: 0; width: 100vw; height: 260vw;}
+	#intro .intro_main {position: absolute; z-index: 1; width: 90vw; height: 100vw; margin: 5vw 0 0 5vw; overflow: hidden; background: #f7f7f7 url("../img/intro_bg_m.svg") center center; background-size: cover;} 
+	#intro .intro_main .intro_main_title {position: relative; width: 50vw; float: left; margin: 32vw 0 0 4vw; text-transform: uppercase; font-size: 220%; color: #000; font-weight: 600; line-height: 115%;}
+	#intro .intro_main .intro_main_title span {color: #ac1b42;}
+	#intro .intro_main .intro_main_circles {display: none;}
+	#intro .intro_specific {position: absolute; z-index: 2; width: 80vw; margin: 98vw 0 0 10vw; overflow: hidden;} 
+	#intro .intro_specific .intro_specific_item {position: relative; width: 80vw; height: 35vw; margin: 0 0 5vw 0; border: 0.25vw solid #f7f7f7; border-top: 1vw solid #ac1b42; background: #fff;}
+	#intro .intro_specific .intro_specific_item:last-child {margin: 0;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_num {position: relative; margin: 12.5vw 0 0 5vw; font-size: 240%; font-weight: 600; color: #ac1b42;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_num sup {position: absolute; margin: -0.5vw 0 0 0; font-size: 75%;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_text {position: relative; margin: 5vw 20vw 0 5vw; font-size: 130%;}
+	
+	
+	#solutions {position: relative; margin: 0; padding: 0; width: 100vw; height: 245vw;}
+	#solutions .solutions_img {position: relative; z-index: 2; width: 90vw; margin: 20vw 0 0 5vw; line-height: 0;}
+	#solutions .solutions_img:before {position: absolute; z-index: -1; content: ''; width: 100vw; height: 57vw; margin: 37vw 0 0 -5vw; background: #ac1b42;}
+	#solutions img {width: 100%;}
+	#solutions .solutions_circles {display: none;}
+	#solutions .solutions_info {position: relative; width: 90vw; margin: 13.5vw 0 0 5vw;}
+	#solutions .solutions_info .solutions_info_title {position: relative; margin: 0 0 6.5vw 0; text-transform: uppercase; font-size: 290%; color: #000; font-weight: 600; line-height: 100%;}
+	#solutions .solutions_info .solutions_info_title span {color: #ac1b42;}
+	#solutions .solutions_info .solutions_info_text {position: relative; margin: 0 0 6.5vw 0; font-size: 155%; line-height: 125%; color: #000;}
+	#solutions .solutions_info .solutions_info_item {position: relative; width: 87.5vw; margin: 0 0 7.5vw 7.5vw; font-size: 155%; line-height: 125%; color: #000;}
+	#solutions .solutions_info .solutions_info_item:last-child {margin: 0 0 0 7.5vw;}
+	#solutions .solutions_info .solutions_info_item:before {position: absolute; z-index: -1; content: ''; width: 2.75vw; height: 2.75vw; margin: 2vw 0 0 -7.5vw; background: #ac1b42;}
+	
+	
+	#company {position: relative; margin: 0; padding: 0; width: 100vw; height: 270vw;}
+	#company .company_img {position: relative; z-index: 2; width: 90vw; margin: 0 0 0 5vw; line-height: 0;}
+	#company .company_img:after {position: absolute; z-index: -1; content: ''; width: 100vw; height: 59vw; margin: 37vw 0 0 -95vw; background: #ac1b42;}
+	#company img {width: 100%;} 
+	#company .company_circles {display: none;}
+	#company .company_info {position: relative; float: left; width: 90vw; margin: 18vw 0 10vw 5vw;}
+	#company .company_info .company_info_title {position: relative; margin: 0 0 6.5vw 0; text-transform: uppercase; font-size: 290%; color: #000; font-weight: 600; line-height: 100%;}
+	#company .company_info .company_info_title span {color: #ac1b42;}
+	#company .company_info .company_info_text {position: relative; margin: 0 0 6.5vw 0; font-size: 155%; line-height: 125%; color: #000;}
+	#company .company_info .company_info_item {position: relative; width: 87.5vw; margin: 0 0 7.5vw 7.5vw; font-size: 155%; line-height: 125%; color: #000;}
+	#company .company_info .company_info_item:last-child {margin: 0 0 0 7.5vw;}
+	#company .company_info .company_info_item:before {position: absolute; z-index: -1; content: ''; width: 2.75vw; height: 2.75vw; margin: 2vw 0 0 -7.5vw; background: #ac1b42;}
+	
+	
+	#spec {position: relative; width: 100vw; height: 358vw;  margin: 6.5vw 0 0 0; background: #f7f7f7;}
+	#spec .spec_title {position: relative; padding: 19vw 0 6vw 5vw; text-transform: uppercase; font-size: 290%; color: #000; font-weight: 600; line-height: 115%;}
+	#spec .spec_list {position: relative; width: 90vw; margin: 0 0 0 5vw; padding: 0; overflow: hidden;}
+	#spec .spec_list .spec_list_item {position: relative; width: 90vw; height: 79vw; margin: 0 0 2vw 0; border-radius: 2.5vw; overflow: hidden;}
+	#spec .spec_list .spec_list_item:last-child {margin: 0;}
+	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0;}
+	#spec .spec_list .spec_list_item .spec_list_item_img img {width: 100%;}
+	#spec .spec_list .spec_list_item .spec_list_item_title {position: relative; z-index: 2; padding: 42vw 0 0 5vw; font-size: 225%; color: #fff;line-height: 115%;}
+	#spec .spec_list .spec_list_item .spec_list_item_text {position: relative; z-index: 2; padding: 3vw 10vw 0 5vw; color: #fff; line-height: 140%; font-size: 130%;}
+	
+	
+	#contacts {position: relative; width: 100vw; height: 250vw;  padding: 0; background: #f7f7f7;}
+	#contacts .contacts_title {position: relative; padding: 17.5vw 0 0 5vw; text-transform: uppercase; font-size: 290%; color: #000; font-weight: 600; line-height: 115%;}
+	#contacts .contacts_list {position: relative; float: left; margin: 13.5vw 0 0 5vw;}
+	#contacts .contacts_list .contacts_list_item {position: relative; margin: 0 0 10vw 0; width: 90vw;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_name {position: relative; margin: 0 0 5vw 0; color: #ac1b42; font-size: 210%; line-height: 125%;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info {position: relative;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_img {position: relative; width: 8vw; margin: 0 0 5vw 0; line-height: 0;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_img img {width: 100%;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_text {position: relative; margin: 0; color: #000; font-size: 220%; font-weight: 500; line-height: 125% !important;}
+	#contacts .contacts_ya_map {position: relative; width: 90vw; height: 95vw; margin: 0 0 0 5vw; border-radius: 2.5vw; overflow: hidden;}
+	#contacts .contacts_ya_map iframe {width: 100%; height: 100%;}
+	
+	
+	.vcms__popup-check {display: none;}
+	.vcms__popup {position: fixed; z-index: 1000; top: 0; left: 0; right: 0; bottom: 0; background: transparent; display: flex; opacity: 0; visibility: hidden; transition: all 0s ease-in-out;}
+	.vcms__popup-check:checked + .vcms__popup {opacity: 1; visibility: visible; }
+	.vcms__popup .close {position: absolute; z-index: 99; top: 11vw; right: 11.5vw; width: 5vw; height: 5vw; line-height: 0;}
+	.vcms__popup .close img {width: 100%;}
+	.vcms__popup .close:hover {cursor: pointer; transform: rotate(90deg);}
+	.vcms__popup .inner {width: 100vw; height: 100vh; overflow: auto; background-color: #f7f7f7; box-sizing: border-box; opacity: 0; margin: 0; transition: all 0.5s ease-in-out;}
+	.vcms__popup-check:checked + .vcms__popup .inner {opacity: 1;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_nav {position: relative; margin: 15vw 0 10vw 10vw;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_nav .header_nav-item {position: relative; margin: 0 0 5vw 0;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_nav .header_nav-item a {font-size: 150%;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_lang {position: relative; margin: 0 0 0 10vw; padding; 0;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_lang [class^='header_lang-'] {position: relative; width: 5vw; float: left; margin: 0 2.5vw 0 0; line-height: 0;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_lang [class^='header_lang-']:last-child {margin: 0;}
+	.vcms__popup-check:checked + .vcms__popup .inner .header_lang [class^='header_lang-'] img {width: 100%;}
+
+
+}
+
+
+@media (min-width: 801px) and (max-width: 3500px) {
+    
+	
+	html, body {padding: 0; margin: 0; height: 100%; width: 100%; color: #505050; font-family: inter, sans-serif; font-size: 0.95vw; font-style: normal; font-weight: 400; line-height: 150%; background: #fff;}
+	a {color: #000; text-decoration: underline;}
+	a:hover {color: #ac1b42;}
+	
+	
+	header {position: absolute; z-index: 10; width: 89vw; height: 8.25vw; top: 0; left: 5.5vw; margin: 0; padding: 0; background: transparent; border-bottom: 0.05vw solid #ac1b42;}
+	header .header_logo {position: relative; float: left; width: 11.425vw; margin: 5.2vw 0 0 0; padding: 0; line-height: 0;}
+	header img {width: 100%;}
+	header .header_nav {position: relative; float: left; margin: 5.2vw 0 0 24vw; padding; 0;}
+	header .header_nav .header_nav-item {position: relative; float: left; margin: 0 3.25vw 0 0;}
+	header .header_nav .header_nav-item a {color: #505050; text-decoration: none;}
+	header .header_nav .header_nav-item a:hover {color: #ac1b42;}
+	header .header_lang {position: relative; float: right; margin: 5.2vw 0 0 0; padding; 0;}
+	header .header_lang [class^='header_lang-'] {position: relative; width: 1.4vw; float: left; margin: 0 1vw 0 0; line-height: 0;}
+	header .header_lang [class^='header_lang-']:last-child {margin: 0;}
+	header .header_lang [class^='header_lang-'] img {width: 100%;}
+	header .header_online {display: none;}
+	
+	
+	#intro {position: relative; margin: 0; padding: 0; width: 100vw; height: 52.5vw;}
+	#intro .intro_main {position: absolute; z-index: 1; width: 95vw; height: 45vw; margin: 2.5vw 0 0 2.5vw; border-radius: 1vw; overflow: hidden; background: #f7f7f7 url("../img/intro_bg.svg") center center; background-size: cover;} 
+	#intro .intro_main .intro_main_title {position: relative; width: 50vw; float: left; margin: 15.75vw 0 0 3vw; text-transform: uppercase; font-size: 470%; color: #000; font-weight: 600; line-height: 115%;}
+	#intro .intro_main .intro_main_title span {color: #ac1b42;}
+	#intro .intro_main .intro_main_circles {position: relative; width: 8vw; float: right; margin: 12vw 3.25vw 0 0; line-height: 0;}
+	#intro .intro_main .intro_main_circles img {width: 100%;}
+	#intro .intro_specific {position: absolute; z-index: 2; width: 90vw; margin: 43.25vw 0 0 5vw; overflow: hidden;} 
+	#intro .intro_specific .intro_specific_item {position: relative; float: left; width: 20.5vw; height: 8.5vw; margin: 0 2.52vw 0 0; border: 0.05vw solid #f7f7f7; border-top: 0.3vw solid #ac1b42; background: #fff;}
+	#intro .intro_specific .intro_specific_item:last-child {margin: 0; float: right;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_num {position: relative; margin: 2.25vw 0 0 2.25vw; font-size: 240%; font-weight: 600; color: #ac1b42;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_num sup {position: absolute; margin: -0.5vw 0 0 0; font-size: 75%;}
+	#intro .intro_specific .intro_specific_item .intro_specific_item_text {position: relative; margin: 0.75vw 0 0 2.25vw; font-size: 130%;}
+	
+	
+	#solutions {position: relative; margin: 0; padding: 0; width: 100vw; height: 48.5vw;}
+	#solutions .solutions_img {position: relative; z-index: 2; float: left; width: 38.5vw; margin: 6.5vw 0 0 2.5vw; line-height: 0;}
+	#solutions .solutions_img:before {position: absolute; z-index: -1; content: ''; width: 32vw; height: 17.5vw; margin: 24vw 0 0 -2.5vw; background: #ac1b42;}
+	#solutions img {width: 100%;}
+	#solutions .solutions_circles {position: relative; z-index: 1; width: 8vw; float: left; margin: 18vw 0 0 -3.25vw; line-height: 0;}
+	#solutions .solutions_info {position: relative; float: left; width: 45vw; margin: 6.5vw 0 0 5vw;}
+	#solutions .solutions_info .solutions_info_title {position: relative; margin: 0 0 3vw 0; text-transform: uppercase; font-size: 285%; color: #000; font-weight: 600; line-height: 115%;}
+	#solutions .solutions_info .solutions_info_title span {color: #ac1b42;}
+	#solutions .solutions_info .solutions_info_text {position: relative; margin: 0 1vw 3vw 0; font-size: 165%; line-height: 125%; color: #000;}
+	#solutions .solutions_info .solutions_info_item {position: relative; width: 26vw; margin: 0 0 1.5vw 2vw; font-size: 165%; line-height: 125%; color: #000;}
+	#solutions .solutions_info .solutions_info_item:before {position: absolute; z-index: -1; content: ''; width: 0.65vw; height: 0.65vw; margin: 0.75vw 0 0 -2vw; background: #ac1b42;}
+	
+	
+	#company {position: relative; margin: 0; padding: 0; width: 100vw; height: 48.5vw;}
+	#company .company_img {position: relative; z-index: 2; float: left; width: 38.5vw; margin: 6.5vw 0 0 0; line-height: 0;}
+	#company .company_img:before {position: absolute; z-index: -1; content: ''; width: 32vw; height: 17.5vw; margin: 24vw 0 0 17.5vw; background: #ac1b42;}
+	#company img {width: 100%;}
+	#company .company_circles {position: relative; z-index: 1; width: 8vw; float: left; margin: 4.75vw 0 0 -4.25vw; line-height: 0;}
+	#company .company_info {position: relative; float: left; width: 45vw; margin: 6.5vw 0.5vw 0 5vw;}
+	#company .company_info .company_info_title {position: relative; margin: 0 0 3vw 0; text-transform: uppercase; font-size: 285%; color: #000; font-weight: 600; line-height: 115%;}
+	#company .company_info .company_info_title span {color: #ac1b42;}
+	#company .company_info .company_info_text {position: relative; margin: 0 1vw 3vw 0; font-size: 165%; line-height: 125%; color: #000;}
+	#company .company_info .company_info_item {position: relative; width: 38vw; margin: 0 0 1.5vw 2vw; font-size: 165%; line-height: 125%; color: #000;}
+	#company .company_info .company_info_item:before {position: absolute; z-index: -1; content: ''; width: 0.65vw; height: 0.65vw; margin: 0.75vw 0 0 -2vw; background: #ac1b42;}
+	
+	
+	#spec {position: relative; width: 100vw; height: 48vw;  margin: 6.5vw 0 0 0; background: #f7f7f7;}
+	#spec .spec_title {position: relative; padding: 6.5vw 0 3vw 5vw; text-transform: uppercase; font-size: 285%; color: #000; font-weight: 600; line-height: 115%;}
+	#spec .spec_list {position: relative; width: 90vw; margin: 0 0 0 5vw; padding: 0; overflow: hidden;}
+	#spec .spec_list .spec_list_item {position: relative; float: left; width: 21.5vw; height: 35vw; margin: 0 1.325vw 0 0; border-radius: 0.75vw; overflow: hidden;}
+	#spec .spec_list .spec_list_item:last-child {float: right; margin: 0;}
+	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0;}
+	#spec .spec_list .spec_list_item .spec_list_item_img img {width: 100%;}
+	#spec .spec_list .spec_list_item .spec_list_item_title {position: relative; z-index: 2; padding: 25.5vw 0 0 1.5vw; font-size: 175%; color: #fff;line-height: 115%;}
+	#spec .spec_list .spec_list_item .spec_list_item_text {position: relative; z-index: 2; padding: 0.75vw 2.5vw 0 1.5vw; color: #fff; line-height: 140%;}
+	
+	
+	#contacts {position: relative; width: 100vw; height: 45vw;  padding: 6.5vw 0 0 0; background: #f7f7f7;}
+	#contacts .contacts_title {position: relative; padding: 6.5vw 0 0 5vw; text-transform: uppercase; font-size: 285%; color: #000; font-weight: 600; line-height: 115%;}
+	#contacts .contacts_list {position: relative; float: left; margin: 10vw 0 0 5vw;}
+	#contacts .contacts_list .contacts_list_item {position: relative; margin: 0 0 3vw 0; width: 35vw;}
+	#contacts .contacts_list .contacts_list_item:last-child {width: 30vw;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_name {position: relative; margin: 0 0 1.25vw 0; color: #ac1b42; font-size: 165%;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info {position: relative; overflow: hidden;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_img {position: relative; float: left; width: 2.75vw; margin: 0 1.25vw 2vw 0; line-height: 0;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_img img {width: 100%;}
+	#contacts .contacts_list .contacts_list_item .contacts_list_item_info .contacts_list_item_text {position: relative; margin: 0; color: #000; font-size: 240%; font-weight: 500; line-height: 125% !important;}
+	#contacts .contacts_ya_map {position: relative; float: right; width: 50vw; height: 31vw; margin: -2vw 5vw 0 0; border-radius: 1vw; overflow: hidden;}
+	#contacts .contacts_ya_map iframe {width: 100%; height: 100%;}
+	
+	.vcms__popup-check, .vcms__popup {display: none;}
+		
+}
