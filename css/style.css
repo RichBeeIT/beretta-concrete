@@ -40,9 +40,11 @@
 	#intro .intro_main .intro_main_title {position: relative; width: 50vw; float: left; margin: 32vw 0 0 4vw; text-transform: uppercase; font-size: 220%; color: #000; font-weight: 600; line-height: 115%;}
 	#intro .intro_main .intro_main_title span {color: #ac1b42;}
 	#intro .intro_main .intro_main_circles {display: none;}
-	#intro .intro_specific {position: absolute; z-index: 2; width: 80vw; margin: 98vw 0 0 10vw; overflow: hidden;} 
+	#intro .intro_specific {position: absolute; z-index: 2; width: 80vw; margin: 98vw 0 0 10vw }
 	#intro .intro_specific .intro_specific_item {position: relative; width: 80vw; height: 35vw; margin: 0 0 5vw 0; border: 0.25vw solid #f7f7f7; border-top: 1vw solid #ac1b42; background: #fff;}
 	#intro .intro_specific .intro_specific_item:last-child {margin: 0;}
+	#intro .intro_specific .intro_specific_item:hover {box-shadow: 0 4vw 8vw rgba(172, 27, 66, 0.15);}
+	#intro .intro_specific .intro_specific_item {transition: box-shadow 0.3s ease;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_num {position: relative; margin: 12.5vw 0 0 5vw; font-size: 240%; font-weight: 600; color: #ac1b42;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_num sup {position: absolute; margin: -0.5vw 0 0 0; font-size: 75%;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_text {position: relative; margin: 5vw 20vw 0 5vw; font-size: 130%;}
@@ -81,7 +83,10 @@
 	#spec .spec_list {position: relative; width: 90vw; margin: 0 0 0 5vw; padding: 0; overflow: hidden;}
 	#spec .spec_list .spec_list_item {position: relative; width: 90vw; height: 79vw; margin: 0 0 2vw 0; border-radius: 2.5vw; overflow: hidden;}
 	#spec .spec_list .spec_list_item:last-child {margin: 0;}
-	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0;}
+	#spec .spec_list .spec_list_item:hover {box-shadow: 0 4vw 12vw rgba(172, 27, 66, 0.2);}
+	#spec .spec_list .spec_list_item {transition: box-shadow 0.3s ease;}
+	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0; transition: transform 0.3s ease;}
+	#spec .spec_list .spec_list_item:hover .spec_list_item_img {transform: scale(1.02);}
 	#spec .spec_list .spec_list_item .spec_list_item_img img {width: 100%;}
 	#spec .spec_list .spec_list_item .spec_list_item_title {position: relative; z-index: 2; padding: 42vw 0 0 5vw; font-size: 225%; color: #fff;line-height: 115%;}
 	#spec .spec_list .spec_list_item .spec_list_item_text {position: relative; z-index: 2; padding: 3vw 10vw 0 5vw; color: #fff; line-height: 140%; font-size: 130%;}
@@ -151,9 +156,11 @@
 	#intro .intro_main .intro_main_title span {color: #ac1b42;}
 	#intro .intro_main .intro_main_circles {position: relative; width: 8vw; float: right; margin: 12vw 3.25vw 0 0; line-height: 0;}
 	#intro .intro_main .intro_main_circles img {width: 100%;}
-	#intro .intro_specific {position: absolute; z-index: 2; width: 90vw; margin: 43.25vw 0 0 5vw; overflow: hidden;} 
+	#intro .intro_specific {position: absolute; z-index: 2; width: 90vw; margin: 43.25vw 0 0 5vw }
 	#intro .intro_specific .intro_specific_item {position: relative; float: left; width: 20.5vw; height: 8.5vw; margin: 0 2.52vw 0 0; border: 0.05vw solid #f7f7f7; border-top: 0.3vw solid #ac1b42; background: #fff;}
 	#intro .intro_specific .intro_specific_item:last-child {margin: 0; float: right;}
+	#intro .intro_specific .intro_specific_item:hover {box-shadow: 0 0.5vw 1.5vw rgba(172, 27, 66, 0.15);}
+	#intro .intro_specific .intro_specific_item {transition: box-shadow 0.3s ease;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_num {position: relative; margin: 2.25vw 0 0 2.25vw; font-size: 240%; font-weight: 600; color: #ac1b42;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_num sup {position: absolute; margin: -0.5vw 0 0 0; font-size: 75%;}
 	#intro .intro_specific .intro_specific_item .intro_specific_item_text {position: relative; margin: 0.75vw 0 0 2.25vw; font-size: 130%;}
@@ -190,7 +197,10 @@
 	#spec .spec_list {position: relative; width: 90vw; margin: 0 0 0 5vw; padding: 0; overflow: hidden;}
 	#spec .spec_list .spec_list_item {position: relative; float: left; width: 21.5vw; height: 35vw; margin: 0 1.325vw 0 0; border-radius: 0.75vw; overflow: hidden;}
 	#spec .spec_list .spec_list_item:last-child {float: right; margin: 0;}
-	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0;}
+	#spec .spec_list .spec_list_item:hover {box-shadow: 0 0.75vw 2vw rgba(172, 27, 66, 0.2);}
+	#spec .spec_list .spec_list_item {transition: box-shadow 0.3s ease;}
+	#spec .spec_list .spec_list_item .spec_list_item_img {position: absolute; z-index: 1; width: 100%; margin: 0; padding: 0; line-height: 0; transition: transform 0.3s ease;}
+	#spec .spec_list .spec_list_item:hover .spec_list_item_img {transform: scale(1.02);}
 	#spec .spec_list .spec_list_item .spec_list_item_img img {width: 100%;}
 	#spec .spec_list .spec_list_item .spec_list_item_title {position: relative; z-index: 2; padding: 25.5vw 0 0 1.5vw; font-size: 175%; color: #fff;line-height: 115%;}
 	#spec .spec_list .spec_list_item .spec_list_item_text {position: relative; z-index: 2; padding: 0.75vw 2.5vw 0 1.5vw; color: #fff; line-height: 140%;}
