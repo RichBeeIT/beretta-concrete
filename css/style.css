@@ -38,7 +38,7 @@
 	#intro {position: relative; margin: 0; padding: 0; width: 100vw; height: 260vw;}
 	#intro .intro_main {position: absolute; z-index: 1; width: 90vw; height: 100vw; margin: 5vw 0 0 5vw; overflow: hidden; background: #f7f7f7 url("../img/intro_bg_m.svg") center center; background-size: cover;} 
 	#intro .intro_main .intro_main_title {position: relative; width: 50vw; float: left; margin: 32vw 0 0 4vw; text-transform: uppercase; font-size: 220%; color: #000; font-weight: 600; line-height: 115%;}
-	#intro .intro_main .intro_main_title span {color: #ac1b42;}
+	#intro .intro_main .intro_main_title span:first-child {color: #ac1b42;}
 	#intro .intro_main .intro_main_circles {display: none;}
 	#intro .intro_specific {position: absolute; z-index: 2; width: 80vw; margin: 98vw 0 0 10vw }
 	#intro .intro_specific .intro_specific_item {position: relative; width: 80vw; height: 35vw; margin: 0 0 5vw 0; border: 0.25vw solid #f7f7f7; border-top: 1vw solid #ac1b42; background: #fff;}
@@ -153,7 +153,7 @@
 	#intro {position: relative; margin: 0; padding: 0; width: 100vw; height: 52.5vw;}
 	#intro .intro_main {position: absolute; z-index: 1; width: 95vw; height: 45vw; margin: 2.5vw 0 0 2.5vw; border-radius: 1vw; overflow: hidden; background: #f7f7f7 url("../img/intro_bg.svg") center center; background-size: cover;} 
 	#intro .intro_main .intro_main_title {position: relative; width: 50vw; float: left; margin: 15.75vw 0 0 3vw; text-transform: uppercase; font-size: 470%; color: #000; font-weight: 600; line-height: 115%;}
-	#intro .intro_main .intro_main_title span {color: #ac1b42;}
+	#intro .intro_main .intro_main_title span:first-child {color: #ac1b42;}
 	#intro .intro_main .intro_main_circles {position: relative; width: 8vw; float: right; margin: 12vw 3.25vw 0 0; line-height: 0;}
 	#intro .intro_main .intro_main_circles img {width: 100%;}
 	#intro .intro_specific {position: absolute; z-index: 2; width: 90vw; margin: 43.25vw 0 0 5vw }
@@ -225,4 +225,13 @@
 	
 	.vcms__popup-check, .vcms__popup {display: none;}
 		
+}
+/* Активное состояние языковых кнопок */
+@media (min-width: 101px) and (max-width: 800px) {
+	header .header_lang [class^='header_lang-'].active {opacity: 0.5;}
+	.vcms__popup .header_lang [class^='header_lang-'].active {opacity: 0.5;}
+}
+
+@media (min-width: 801px) and (max-width: 3500px) {
+	header .header_lang [class^='header_lang-'].active {opacity: 0.5;}
 }

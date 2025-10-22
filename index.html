@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" type="ico" href="img/favicon.svg">
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+		<script src="js/lang.js" defer></script>
 
 	</head>
 	
@@ -21,17 +22,17 @@
 				<a href="/"><img src="img/logo.svg"></a>
 			</div>
 			
-			<div class="header_nav">
-				<div class="header_nav-item">
-					<a href="#solutions">Решения</a>
-				</div>
-				<div class="header_nav-item">
-					<a href="#company">О компании</a>
-				</div>
-				<div class="header_nav-item">
-					<a href="#contacts">Контакты</a>
-				</div>
+		<div class="header_nav">
+			<div class="header_nav-item">
+				<a href="#solutions" data-i18n="nav_solutions">Решения</a>
 			</div>
+			<div class="header_nav-item">
+				<a href="#company" data-i18n="nav_company">О компании</a>
+			</div>
+			<div class="header_nav-item">
+				<a href="#contacts" data-i18n="nav_contacts">Контакты</a>
+			</div>
+		</div>
 			
 			<div class="header_lang">
 				<div class="header_lang-it">
@@ -51,38 +52,38 @@
 		
 		<section id="intro">
 		
-			<div class="intro_main">
-				<div class="intro_main_title">
-					<span>Производство</span> промышленного оборудования
-				</div>
-				<div class="intro_main_circles">
-					<img src="img/circles.svg">
-				</div>
+		<div class="intro_main">
+			<div class="intro_main_title">
+				<span data-i18n="intro_title_span">Производство</span> <span data-i18n="intro_title_text">промышленного оборудования</span>
 			</div>
-			
-			<div class="intro_specific">
-			
-				<div class="intro_specific_item">
-					<div class="intro_specific_item_num">270+</div>
-					<div class="intro_specific_item_text">сотрудников занято в производстве</div>
-				</div>
-			
-				<div class="intro_specific_item">
-					<div class="intro_specific_item_num">15+</div>
-					<div class="intro_specific_item_text">сотрудников в конструкторском отделе</div>
-				</div>
-			
-				<div class="intro_specific_item">
-					<div class="intro_specific_item_num">20 000 м<sup>2</sup></div>
-					<div class="intro_specific_item_text">площадь промышленных помещений</div>
-				</div>
-			
-				<div class="intro_specific_item">
-					<div class="intro_specific_item_num">4 га</div>
-					<div class="intro_specific_item_text">площадь заводских территорий</div>
-				</div>
-			
+			<div class="intro_main_circles">
+				<img src="img/circles.svg">
 			</div>
+		</div>
+		
+		<div class="intro_specific">
+		
+			<div class="intro_specific_item">
+				<div class="intro_specific_item_num" data-i18n="intro_stat1_num">270+</div>
+				<div class="intro_specific_item_text" data-i18n="intro_stat1_text">сотрудников занято в производстве</div>
+			</div>
+		
+			<div class="intro_specific_item">
+				<div class="intro_specific_item_num" data-i18n="intro_stat2_num">15+</div>
+				<div class="intro_specific_item_text" data-i18n="intro_stat2_text">сотрудников в конструкторском отделе</div>
+			</div>
+		
+			<div class="intro_specific_item">
+				<div class="intro_specific_item_num" data-i18n="intro_stat3_num">20 000 м<sup>2</sup></div>
+				<div class="intro_specific_item_text" data-i18n="intro_stat3_text">площадь промышленных помещений</div>
+			</div>
+		
+			<div class="intro_specific_item">
+				<div class="intro_specific_item_num" data-i18n="intro_stat4_num">4 га</div>
+				<div class="intro_specific_item_text" data-i18n="intro_stat4_text">площадь заводских территорий</div>
+			</div>
+		
+		</div>
 		
 		</section>
 		
@@ -99,27 +100,27 @@
 				<img src="img/circles_gray.svg">
 			</div>
 			
-			<div class="solutions_info">
-				<div class="solutions_info_title">Комплексные решения для <span>заводов сборного железобетона</span></div>
-				<div class="solutions_info_text">Мы предоставляем нашим клиентам индивидуальные решения для изготовления сборных бетонных элементов “под ключ”:</div>
-				<div class="solutions_info_item">проектирование и производство линий циркуляции палет</div>
-				<div class="solutions_info_item">внедрение роботов для укладки магнитной опалубки</div>
-				<div class="solutions_info_item">автоматизация производственной линии</div>
-				<div class="solutions_info_item">внедрение ERP и MES систем</div>
-			</div>
+		<div class="solutions_info">
+			<div class="solutions_info_title"><span data-i18n="solutions_title_text">Комплексные решения для</span> <span data-i18n="solutions_title_span">заводов сборного железобетона</span></div>
+			<div class="solutions_info_text" data-i18n="solutions_info_text">Мы предоставляем нашим клиентам индивидуальные решения для изготовления сборных бетонных элементов "под ключ":</div>
+			<div class="solutions_info_item" data-i18n="solutions_item1">проектирование и производство линий циркуляции палет</div>
+			<div class="solutions_info_item" data-i18n="solutions_item2">внедрение роботов для укладки магнитной опалубки</div>
+			<div class="solutions_info_item" data-i18n="solutions_item3">автоматизация производственной линии</div>
+			<div class="solutions_info_item" data-i18n="solutions_item4">внедрение ERP и MES систем</div>
+		</div>
 		
 		</section>
 		
 		<section id="company">
 			
 			<div class="company_info">
-				<div class="company_info_title">BERETTA</div>
-				<div class="company_info_text">Группа компаний с опытом работы на международном рынке осуществляет следующую деятельность:</div>
-				<div class="company_info_item">автоматизация производственных линий</div>
-				<div class="company_info_item">тяжелое машиностроение</div>
-				<div class="company_info_item">производство роботов</div>
-				<div class="company_info_item">проектирования, инжиниринга, консалтинговых услуг в отрасли проектирования зданий, строительства сборных преднапряженных конструкций, технологий производства</div>
-				<div class="company_info_item">внедрение продуктов цифровизации</div>
+				<div class="company_info_title" data-i18n="company_title">BERETTA</div>
+				<div class="company_info_text" data-i18n="company_text">Группа компаний с опытом работы на международном рынке осуществляет следующую деятельность:</div>
+				<div class="company_info_item" data-i18n="company_item1">автоматизация производственных линий</div>
+				<div class="company_info_item" data-i18n="company_item2">тяжелое машиностроение</div>
+				<div class="company_info_item" data-i18n="company_item3">производство роботов</div>
+				<div class="company_info_item" data-i18n="company_item4">проектирования, инжиниринга, консалтинговых услуг в отрасли проектирования зданий, строительства сборных преднапряженных конструкций, технологий производства</div>
+				<div class="company_info_item" data-i18n="company_item5">внедрение продуктов цифровизации</div>
 			</div>
 		
 			<div class="company_img">
@@ -138,7 +139,7 @@
 		<section id="spec">
 			
 			<div class="spec_title">
-				Специализация
+				<span data-i18n="spec_title">Специализация</span>
 			</div>
 			
 			<div class="spec_list">
@@ -150,8 +151,8 @@
 							<img src="img/spec_1.jpg">
 						</picture>
 					</div>
-					<div class="spec_list_item_title">Проектирование</div>
-					<div class="spec_list_item_text">Широкий опыт в области сборных железобетонных строительных систем</div>
+					<div class="spec_list_item_title" data-i18n="spec1_title">Проектирование</div>
+					<div class="spec_list_item_text" data-i18n="spec1_text">Широкий опыт в области сборных железобетонных строительных систем</div>
 				</div>
 				<div class="spec_list_item">
 					<div class="spec_list_item_img">
@@ -161,8 +162,8 @@
 							<img src="img/spec_2.jpg">
 						</picture>
 					</div>
-					<div class="spec_list_item_title">Производство</div>
-					<div class="spec_list_item_text">Большой опыт в проектировании карусельных линий для домостроительных комбинатов</div>
+					<div class="spec_list_item_title" data-i18n="spec2_title">Производство</div>
+					<div class="spec_list_item_text" data-i18n="spec2_text">Большой опыт в проектировании карусельных линий для домостроительных комбинатов</div>
 				</div>
 				<div class="spec_list_item">
 					<div class="spec_list_item_img">
@@ -172,8 +173,8 @@
 							<img src="img/spec_3.jpg">
 						</picture>
 					</div>
-					<div class="spec_list_item_title">Роботизация</div>
-					<div class="spec_list_item_text">Многолетний опыт внедрения промышленных роботов</div>
+					<div class="spec_list_item_title" data-i18n="spec3_title">Роботизация</div>
+					<div class="spec_list_item_text" data-i18n="spec3_text">Многолетний опыт внедрения промышленных роботов</div>
 				</div>
 				<div class="spec_list_item">
 					<div class="spec_list_item_img">
@@ -183,8 +184,8 @@
 							<img src="img/spec_4.jpg">
 						</picture> 
 					</div>
-					<div class="spec_list_item_title">Автоматизация</div>
-					<div class="spec_list_item_text">Проектирование и производство шкафов управления для станкостроительной и машиностроительной отраслей</div>
+					<div class="spec_list_item_title" data-i18n="spec4_title">Автоматизация</div>
+					<div class="spec_list_item_text" data-i18n="spec4_text">Проектирование и производство шкафов управления для станкостроительной и машиностроительной отраслей</div>
 				</div>
 			</div>
 		
@@ -193,22 +194,22 @@
 		<section id="contacts">
 			
 			<div class="contacts_title">
-				Контакты
+				<span data-i18n="contacts_title">Контакты</span>
 			</div>
 				
 			<div class="contacts_list">
 				<div class="contacts_list_item">
-					<div class="contacts_list_item_name">Электронная почта</div>
+					<div class="contacts_list_item_name" data-i18n="contacts_email_name">Электронная почта</div>
 					<div class="contacts_list_item_info">
 						<div class="contacts_list_item_img"><img src="img/mail.svg"></div>
 						<div class="contacts_list_item_text"><a href="mailto:info@beretta-concrete.com">info@beretta-concrete.com</a></div>
 					</div>
 				</div>
 				<div class="contacts_list_item">
-					<div class="contacts_list_item_name">Офис и производство в Ярославле</div>
+					<div class="contacts_list_item_name" data-i18n="contacts_office_name">Офис и производство в Ярославле</div>
 					<div class="contacts_list_item_info">
 						<div class="contacts_list_item_img"><img src="img/map-pin.svg"></div>
-						<div class="contacts_list_item_text"><a href="#">Россия, г. Ярославль<br />ул. Гагарина 64А</a></div>
+						<div class="contacts_list_item_text" data-i18n="contacts_office_text"><a href="#">Россия, г. Ярославль<br />ул. Гагарина 64А</a></div>
 					</div>
 				</div>
 			</div>
@@ -221,9 +222,9 @@
 		
 		<footer>
 			<div class="footer_content">
-				<p>© Все права защищены. ООО "БЕРЕТТА КОНКРИТ ТЕХНОЛОДЖИ", 2020—2025</p>
-				<p>ИНН 9715390901</p>
-				<p>ОГРН 1207700377070</p>
+				<p data-i18n="footer_rights">© Все права защищены. ООО "БЕРЕТТА КОНКРИТ ТЕХНОЛОДЖИ", 2020—2025</p>
+				<p data-i18n="footer_inn">ИНН 9715390901</p>
+				<p data-i18n="footer_ogrn">ОГРН 1207700377070</p>
 			</div>
 		</footer>
 		
@@ -235,13 +236,13 @@
 			<div class="inner">
 				<div class="header_nav">
 					<div class="header_nav-item">
-						<a href="#solutions" onclick="return closewindow();">Решения</a>
+						<a href="#solutions" onclick="return closewindow();" data-i18n="nav_solutions">Решения</a>
 					</div>
 					<div class="header_nav-item">
-						<a href="#company">О компании</a>
+						<a href="#company" data-i18n="nav_company">О компании</a>
 					</div>
 					<div class="header_nav-item">
-						<a href="#contacts">Контакты</a>
+						<a href="#contacts" data-i18n="nav_contacts">Контакты</a>
 					</div>
 				</div>
 				
